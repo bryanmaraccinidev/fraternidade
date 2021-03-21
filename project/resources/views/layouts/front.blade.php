@@ -233,7 +233,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-lg-8 col-sm-12 remove-padding order-last order-sm-2 order-md-2">
+				<div class="col-lg-7 col-sm-6 remove-padding order-last order-sm-2 order-md-2">
 					<div class="search-box-wrapper">
 						<div class="search-box">
 							<div class="categori-container" id="catSelectForm">
@@ -260,27 +260,15 @@
 								  <div id="myInputautocomplete-list" class="autocomplete-items">
 								  </div>
 								</div>
-								<button type="submit"><i class="icofont-search-1"></i></button>
+								<button type="submit"><p>Pesquisar</p></button>
 							</form>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-2 col-sm-6 col-7 remove-padding order-lg-last">
+				<div class="col-lg-3 col-sm-6 col-7 remove-padding order-lg-last">
 					<div class="helpful-links">
 						<ul class="helpful-links-inner">
-							<li class="my-dropdown"  data-toggle="tooltip" data-placement="top" title="{{ $langg->lang3 }}">
-								<a href="javascript:;" class="cart carticon">
-									<div class="icon">
-										<i class="icofont-cart"></i>
-										<span class="cart-quantity" id="cart-count">{{ Session::has('cart') ? count(Session::get('cart')->items) : '0' }}</span>
-									</div>
-
-								</a>
-								<div class="my-dropdown-menu" id="cart-items">
-									@include('load.cart')
-								</div>
-							</li>
-							<li class="wishlist"  data-toggle="tooltip" data-placement="top" title="{{ $langg->lang9 }}">
+						<li class="wishlist"  data-toggle="tooltip" data-placement="top" title="{{ $langg->lang9 }}">
 								@if(Auth::guard('web')->check())
 									<a href="{{ route('user-wishlists') }}" class="wish">
 										<i class="far fa-heart"></i>
@@ -293,12 +281,21 @@
 									</a>
 								@endif
 							</li>
-							<li class="compare"  data-toggle="tooltip" data-placement="top" title="{{ $langg->lang10 }}">
-								<a href="{{ route('product.compare') }}" class="wish compare-product">
+							<li class="my-dropdown"  data-toggle="tooltip" data-placement="top" title="{{ $langg->lang3 }}">
+								<a href="javascript:;" class="cart carticon">
 									<div class="icon">
-										<i class="fas fa-exchange-alt"></i>
-										<span id="compare-count">{{ Session::has('compare') ? count(Session::get('compare')->items) : '0' }}</span>
+										<i class="icofont-cart"></i>
+										<span class="cart-quantity" id="cart-count">{{ Session::has('cart') ? count(Session::get('cart')->items) : '0' }}</span>
 									</div>
+
+								</a>
+								<div class="my-dropdown-menu" id="cart-items">
+									@include('load.cart')
+								</div>
+							</li>
+							<li class="compare"  data-toggle="tooltip" data-placement="top" title="{{ $langg->lang10 }}">
+								<a href="{{ route('user.login') }}" class="wish compare-product">
+									<span class="join">{{ $langg->lang13 }}</span>
 								</a>
 							</li>
 
@@ -319,8 +316,9 @@
 					<!--categorie menu start-->
 					<div class="categories_menu">
 						<div class="categories_title">
-							<h2 class="categori_toggle"><i class="fa fa-bars"></i>  {{ $langg->lang14 }} <i class="fa fa-angle-down arrow-down"></i></h2>
+							<h2 class="categori_toggle">{{ $langg->lang14 }} <i class="fa fa-angle-down arrow-down"></i></h2>
 						</div>
+						
 						<div class="categories_menu_inner">
 							<ul>
 								@php

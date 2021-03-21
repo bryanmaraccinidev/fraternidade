@@ -153,7 +153,8 @@ else {
 .single-wish .remove:hover,
 .sub-categori .right-area .categori-item-area .item .item-img .extra-list ul li a 
  {
-    background: <?php echo $color; ?>;
+  background: linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
+         #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) !important;
 }
 
 .section-top .link,
@@ -354,7 +355,13 @@ nav .menu li.dropdown.open > a,
         color: <?php echo $color; ?>; }
 
        .login-area .header-area .title {
-        color: <?php echo $color; ?>; }
+          background-image: linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
+          #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) !important;
+          background-size: 100%;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; 
+          -moz-background-clip: text;
+          -moz-text-fill-color: transparent; }
       .login-area .form-input i {
         color: <?php echo $color; ?>; }
       .login-area .social-area .title {
@@ -371,12 +378,14 @@ nav .menu li.dropdown.open > a,
    background: <?php echo $color; ?>;
 }
      .login-area .submit-btn {
-      background:<?php echo $color; ?>; }
+      background: linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
+         #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) !important; }
 
   .comment-log-reg-tabmenu .nav-tabs .nav-link {
     background: #143250; }
 .comment-log-reg-tabmenu .nav-tabs .nav-link.active {
-    background: <?php echo $color; ?>;
+    background: linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
+         #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) !important;
 }
     
           .trending .item .item-img .extra-list ul li span:hover {
@@ -403,8 +412,9 @@ nav .menu li.dropdown.open > a,
  #style-switcher h2 a {
   background: <?php echo $color; ?>;
 }
-.categorie_sub_menu ul li a:hover {
-  color: <?php echo $color; ?>; }
+
+<!--.categorie_sub_menu ul li a:hover {
+  }-->
 
   .elegant-pricing-tables h3 .price-sticker,
 .elegant-pricing-tables:hover,
@@ -419,12 +429,12 @@ nav .menu li.dropdown.open > a,
   border: 2px solid <?php echo $color; ?>;
  }
  a.sell-btn {
-    background: <?php echo $color; ?>;
+  background-image: linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
+         #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) !important;
 }
  .top-header .content .right-content .list ul li a.sell-btn:hover {
- transition: 0.3s;
- background: #fff;
-color: <?php echo $color; ?>;
+  transition: 0.3s;
+
 }
 .sub-categori .left-area .service-center .body-area .list li i {
   color: <?php echo $color; ?>; 
@@ -443,7 +453,15 @@ color: <?php echo $color; ?>;
   background: <?php echo $color; ?>;
   border-color: <?php echo $color; ?>; }
   .categories_menu_inner > ul > li > ul.categories_mega_menu > li > a:hover {
-  color: <?php echo $color; ?>; }
+    background-image: linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
+    #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) !important;
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent; 
+  }
               .contact-us .left-area .contact-form .form-input i {
               color: <?php echo $color; ?>; 
             }
@@ -642,17 +660,19 @@ input[type=checkbox]:checked + label:before {
   background-color: <?php echo $color; ?>;
 }
 .logo-header .helpful-links ul li.wishlist .wish span {
-          background: <?php echo $color; ?>;
+  background: linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
+         #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) !important;;
           }
           .top-header {
-  background: <?php echo $color; ?>;
+            background: linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
+         #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) !important;;
 
   }
   .logo-header .search-box .search-form button {
         background: <?php echo $color; ?>;
         }
   .categories_title {
-  background: <?php echo $color; ?>;
+    background: #fff !important;
  }
  nav .menu li:last-child a{
     color: <?php echo $color; ?>;

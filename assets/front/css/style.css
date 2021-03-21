@@ -87,7 +87,7 @@ p {
   hyphens: auto; }
 
 a {
-  color: #143250;
+  color: #000;
   text-decoration: none; }
 
 a,
@@ -627,16 +627,18 @@ Logo Header Area Start
   padding: 20px 0px 20px;
   }
   .logo-header .search-box {
-    height: 50px;
+    height: 40px;
     width: 100%;
     border: 1px dashed rgba(255, 255, 255, 0.2);
-    border-radius: 0px;
+    border-radius: 5px;
     position: relative;
     }
     .logo-header .search-box .categori-container {
       position: absolute;
-      height: 50px;
-      width: 160px;
+      height: 40px;
+      width: 100px;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
       z-index: 2; }
       .logo-header .search-box .categori-container::before {
         position: absolute;
@@ -670,10 +672,10 @@ Logo Header Area Start
           .logo-header .search-box .categori-container .categoris option:hover {
             background: #ff5500; }
     .logo-header .search-box .search-form {
-      padding-left: 160px;
+      padding-left: 100px;
       position: relative; }
       .logo-header .search-box .search-form input {
-        height: 50px;
+        height: 40px;
         width: 100%;
         border-radius: 0px 50px 50px 0px;
         border: 0px;
@@ -709,14 +711,31 @@ Logo Header Area Start
         right: -1px;
         background: none;
         border: none;
+        border-radius: 5px;
         margin-top: -1px;
-        font-size: 14px;
+        font-size: 12px;
         color: #333;
         cursor: pointer;
         height: 100%;
-        background: #0f78f2;
-        width: 50px;
+        background: linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
+         #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) !important;
+        width: 85px;
         color: #fff;
+        }
+
+        .logo-header .search-box .search-form button:hover {
+
+        }
+
+        .logo-header .search-box .search-form button p {
+          position: relative;
+          color: #fff !important;
+          text-align: center;
+          vertical-align: middle;
+          font-size: 13px;
+          font-weight: bold;
+          top: 50%;
+          transform: translateY(-60%);
         }
 
   .logo-header .helpful-links {
@@ -979,7 +998,8 @@ Logo Header Area Start
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3); }
 
 .mainmenu-area .categories_menu {
-  position: relative; }
+  position: relative; 
+}
 
 .mainmenu-area .categories_menu .categories_menu_inner {
   position: absolute;
@@ -990,12 +1010,13 @@ Logo Header Area Start
 
 .mainmenu-area .categories_menu .categories_title h2 {
   padding: 12px 14px 12px;
+  color: #000 !important;
   }
 
 .mainmenu-area .categories_menu .categories_title h2 i.arrow-down {
   float: right;
   margin-right: 15px;
-  color: #fff;
+  color: #000;
   text-align: center;
   font-size: 14px;
   margin-top: 4px; }
@@ -1211,7 +1232,13 @@ Logo Header Area Start
   display: block; }
 
 .categorie_sub_menu ul li a:hover {
-  color: #ff5500; }
+  background-image: linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
+  #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) !important;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;}
 
 /*home two categorie css here*/
 @media only screen and (max-width: 767px) {
@@ -1740,7 +1767,8 @@ nav button {
 .item .item-cart-area ul li span{
     width: 30px;
     height: 30px;
-    background:  #0f78f2;
+    background:  linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
+         #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) !important;
     display: block;
     line-height: 30px;
     color: #fff;
@@ -4993,10 +5021,15 @@ nav button {
       padding-top: 26px; }
       .login-area .social-area .title {
         font-size: 20px;
-
         font-weight: 600;
         display: inline-block;
-        color: #ff5500;
+        background-image: linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
+        #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) !important;
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
         position: relative; }
         .login-area .social-area .title::after {
           position: absolute;
@@ -5285,7 +5318,7 @@ nav button {
         text-transform: uppercase;
         font-weight: 600;
         display: inline-block;
-        color: #ff5500;
+        
         position: relative; }
         .login-area .social-area .title::after {
           position: absolute;

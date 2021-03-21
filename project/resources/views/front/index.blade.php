@@ -55,7 +55,7 @@
 	@if($ps->featured_category == 1)
 
 	{{-- Slider Bottom Banner Start --}}
-	<section class="slider_bottom_banner">
+	<!--<section class="slider_bottom_banner">
 		<div class="container">
 		@foreach(DB::table('featured_banners')->get()->chunk(4) as $data1)
 			<div class="row">
@@ -74,7 +74,7 @@
 	
 			</div>
 		</div>
-	</section>
+	</section>-->
 	{{-- Slider Botom Banner End --}}
 
 	@endif

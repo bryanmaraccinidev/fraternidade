@@ -1,6 +1,6 @@
 <?php
 header("Content-type: text/css; charset: UTF-8");
-if(isset($_GET['color']))
+/*if(isset($_GET['color']))
 {
   $color = '#'.$_GET['color'];
 }
@@ -47,7 +47,7 @@ if(isset($_GET['menu_hover_color']))
 else {
   $menu_hover_color = '#02020c';
 }
-
+*/
 
 ?>
 
@@ -648,7 +648,8 @@ input[type=checkbox]:checked + label:before {
         background: <?php echo $color; ?>;
         }
   .categories_title {
-  background: <?php echo $color; ?>;
+    background: linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
+         #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%);
  }
  nav .menu li:last-child a{
     color: <?php echo $color; ?>;
