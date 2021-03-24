@@ -163,6 +163,7 @@ else {
 .input-field.error::-webkit-input-placeholder,
 .breadcrumb-area .pages li a:hover,
 .categories_menu_inner > ul > li > ul.categories_mega_menu > li > a:hover,
+.categories_services_inner > ul > li > ul.categories_mega_services > li > a:hover,
 .categorie_sub_menu ul li a:hover,
 nav .menu li a:hover,
 nav .menu li.dropdown.open > a,
@@ -588,8 +589,8 @@ nav .menu li.dropdown.open > a,
             border: 1px solid  <?php echo $color; ?>;
           }
   .mybtn1:hover {
-    color: <?php echo $color; ?> !important;
-      border: 1px solid <?php echo $color; ?>;
+    color: #fff !important;
+      border: 1px solid #fff000 !important;
     }
     .mybtn2:hover {
       background: <?php echo $color; ?>;
@@ -609,7 +610,7 @@ input[type=checkbox]:checked + label:before {
       background: <?php echo $color; ?>;
  }
 .mybtn1 {
-  border: 1px solid <?php echo $color; ?>;
+  border: 1px solid #fff !important;
   }
   .mybtn2 {
     color: <?php echo $color; ?> !important;
@@ -675,7 +676,7 @@ input[type=checkbox]:checked + label:before {
     background: #fff !important;
  }
  nav .menu li:last-child a{
-    color: <?php echo $color; ?>;
+    color: #767575 !important;
   }
 
   .blog-area .blog-box .details .read-more-btn:hover {

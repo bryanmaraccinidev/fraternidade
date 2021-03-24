@@ -160,7 +160,7 @@
 
 	@if($ps->small_banner == 1)
 		<!-- Banner Area One Start -->
-		<section class="banner-section">
+		<!--<section class="banner-section">
 			<div class="container">
 				@foreach($top_small_banners->chunk(2) as $chunk)
 					<div class="row">
@@ -176,7 +176,7 @@
 					</div>
 				@endforeach
 			</div>
-		</section>
+		</section>-->
 		<!-- Banner Area One Start -->
 	@endif
 

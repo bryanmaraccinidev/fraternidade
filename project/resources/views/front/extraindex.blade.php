@@ -95,7 +95,7 @@
 
 	@if($ps->flash_deal == 1)
 		<!-- Electronics Area Start -->
-		<section class="categori-item electronics-section">
+		<!--<section class="categori-item electronics-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 remove-padding">
@@ -119,13 +119,13 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section>-->
 		<!-- Electronics Area start-->
 	@endif
 
 	@if($ps->large_banner == 1)
 		<!-- Banner Area One Start -->
-		<section class="banner-section">
+		<!--<section class="banner-section">
 			<div class="container">
 				@foreach($large_banners->chunk(1) as $chunk)
 					<div class="row">
@@ -141,7 +141,7 @@
 					</div>
 				@endforeach
 			</div>
-		</section>
+		</section>-->
 		<!-- Banner Area One Start -->
 	@endif
 
@@ -176,7 +176,7 @@
 
 	@if($ps->bottom_small == 1)
 		<!-- Banner Area One Start -->
-		<section class="banner-section">
+		<!--<section class="banner-section">
 			<div class="container">
 				@foreach($bottom_small_banners->chunk(3) as $chunk)
 					<div class="row">
@@ -192,7 +192,7 @@
 					</div>
 				@endforeach
 			</div>
-		</section>
+		</section>-->
 		<!-- Banner Area One Start -->
 	@endif
 
@@ -227,7 +227,7 @@
 
 @if($ps->partners == 1)
 <!-- Partners Area Start -->
-<section class="brand-section partners">
+<!--<section class="brand-section partners">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -256,7 +256,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section>-->
 	<!-- Partners Area End -->
 @endif
 

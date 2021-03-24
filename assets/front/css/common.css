@@ -177,14 +177,14 @@ border: 1px solid #fff;
 .subscribePreloader__text button {
     font-weight: 600;
     width: 25%;
-    background: #333333;
+    background:  linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
+         #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) !important;
     color: #ffffff;
     -webkit-transition: all 400ms ease-in;
     transition: all 400ms ease-in;
 }
 .subscribePreloader__text button:hover {
-    background: #ffffff;
-    color: #333333;
+    color: #fff000;
 }
 .subscribePreloader__thumb span {
     display: block;
@@ -369,7 +369,13 @@ line-height: unset;
 }
 
 .logo-header .helpful-links ul li .wish i {
-  
+  background-image: linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
+  #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) !important;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 .logo-header .helpful-links ul li.my-dropdown .cart p,

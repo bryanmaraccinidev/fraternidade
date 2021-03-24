@@ -297,7 +297,7 @@ nav .menu li a{
     right: 0;
   }
 
-  .categorimenu-wrapper{
+  .categorimenu-wrapper, .categoriservices-wrapper{
     position: absolute;
     top: 0px;
     left: 0;
@@ -878,7 +878,7 @@ div#myInputautocomplete-list {
 
 
 @media only screen and (max-width: 414px) {
-  .categorimenu-wrapper {
+  .categorimenu-wrapper, .categoriservices-wrapper  {
     width: 60%;
 }  
 .blog-area .aside .slider-wrapper {

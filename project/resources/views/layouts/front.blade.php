@@ -395,7 +395,92 @@
 					</div>
 					<!--categorie menu end-->
 				</div>
-				<div class="col-lg-9 col-md-6 mainmenu-wrapper  decrease-padding">
+
+				<div class="col-lg-3 col-md-6 categorimenu-wrapper  decrease-padding">
+					<!--Services menu start-->
+					<div class="categories_menu">
+						<div class="categories_title">
+							<h2 class="categori_toggle">{{ $langg->lang14 }} <i class="fa fa-angle-down arrow-down"></i></h2>
+						</div>
+						
+						<div class="categories_menu_inner">
+							<ul>
+								@php
+								$i=1;
+								@endphp
+								@foreach($categories as $category)
+
+								<li class="{{count($category->subs) > 0 ? 'dropdown_list':''}} {{ $i >= 15 ? 'rx-child' : '' }}">
+								@if(count($category->subs) > 0)
+									<div class="img">
+										<img src="{{ asset('assets/images/categories/'.$category->photo) }}" alt="">
+									</div>
+									<div class="link-area">
+										<span><a href="{{ route('front.category',$category->slug) }}">{{ $category->name }}</a></span>
+										@if(count($category->subs) > 0)
+										<a href="javascript:;">
+											<i class="fa fa-angle-right" aria-hidden="true"></i>
+										</a>
+										@endif
+									</div>
+
+								@else
+									<a href="{{ route('front.category',$category->slug) }}"><img src="{{ asset('assets/images/categories/'.$category->photo) }}"> {{ $category->name }}</a>
+
+								@endif
+									@if(count($category->subs) > 0)
+
+									@php
+									$ck = 0;
+									foreach($category->subs as $subcat) {
+										if(count($subcat->childs) > 0) {
+											$ck = 1;
+											break;
+										}
+									}
+									@endphp
+									<ul class="{{ $ck == 1 ? 'categories_mega_menu' : 'categories_mega_menu column_1' }}">
+										@foreach($category->subs as $subcat)
+											<li>
+												<a href="{{ route('front.subcat',['slug1' => $subcat->category->slug, 'slug2' => $subcat->slug]) }}">{{$subcat->name}}</a>
+												@if(count($subcat->childs) > 0)
+													<div class="categorie_sub_menu">
+														<ul>
+															@foreach($subcat->childs as $childcat)
+															<li><a href="{{ route('front.childcat',['slug1' => $childcat->subcategory->category->slug, 'slug2' => $childcat->subcategory->slug, 'slug3' => $childcat->slug]) }}">{{$childcat->name}}</a></li>
+															@endforeach
+														</ul>
+													</div>
+												@endif
+											</li>
+										@endforeach
+									</ul>
+
+									@endif
+
+									</li>
+
+									@php
+									$i++;
+									@endphp
+
+									@if($i == 15)
+						                <li>
+						                <a href="{{ route('front.categories') }}"><i class="fas fa-plus"></i> {{ $langg->lang15 }} </a>
+						                </li>
+						                @break
+									@endif
+
+
+									@endforeach
+
+							</ul>
+						</div>
+					</div>
+					<!--Services menu end-->
+				</div>
+				
+				<div class="col-lg-6 col-md-6 mainmenu-wrapper  decrease-padding">
 					<nav hidden>
 						<div class="nav-header">
 							<button class="toggle-bar"><span class="fa fa-bars"></span></button>
@@ -404,7 +489,7 @@
 							@if($gs->is_home == 1)
 							<li><a href="{{ route('front.index') }}">{{ $langg->lang17 }}</a></li>
 							@endif
-							<li><a href="{{ route('front.blog') }}">{{ $langg->lang18 }}</a></li>
+							<!--<li><a href="{{ route('front.blog') }}">{{ $langg->lang18 }}</a></li>-->
 							@if($gs->is_faq == 1)
 							<li><a href="{{ route('front.faq') }}">{{ $langg->lang19 }}</a></li>
 							@endif
@@ -414,9 +499,9 @@
 							@if($gs->is_contact == 1)
 							<li><a href="{{ route('front.contact') }}">{{ $langg->lang20 }}</a></li>
 							@endif
-							<li>
+							<!--<li>
 								<a href="javascript:;" data-toggle="modal" data-target="#track-order-modal" class="track-btn">{{ $langg->lang16 }}</a>
-							</li>
+							</li>-->
 						</ul>
 
 					</nav>
@@ -432,7 +517,7 @@
 	<footer class="footer" id="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-lg-4">
+				<div class="col-md-2">
 					<div class="footer-info-area">
 						<div class="footer-logo">
 							<a href="{{ route('front.index') }}" class="logo-link">
@@ -445,47 +530,49 @@
 							</p>
 						</div>
 					</div>
+				</div>
+				
+				<div class="col-md-3">
 					<div class="fotter-social-links text-center">
 						<ul>
-									<h6 class="">Redes Sociais</h6>
-                               	     @if(App\Models\Socialsetting::find(1)->f_status == 1)
-                                      <li>
-                                        <a href="{{ App\Models\Socialsetting::find(1)->facebook }}" class="facebook" target="_blank">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                      </li>
-                                      @endif
+							<h6 class="">Redes Sociais</h6>
+                            @if(App\Models\Socialsetting::find(1)->f_status == 1)
+                                <li>
+                                    <a href="{{ App\Models\Socialsetting::find(1)->facebook }}" class="facebook" target="_blank">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                            @endif
 
-                                      @if(App\Models\Socialsetting::find(1)->l_status == 1)
-                                      <li>
-                                        <a href="{{ App\Models\Socialsetting::find(1)->linkedin }}" class="linkedin" target="_blank">
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </a>
-                                      </li>
-                                      @endif
+                            @if(App\Models\Socialsetting::find(1)->l_status == 1)
+                                <li>
+                                	<a href="{{ App\Models\Socialsetting::find(1)->linkedin }}" class="linkedin" target="_blank">
+                                    	<i class="fab fa-linkedin-in"></i>
+                                	</a>
+                                </li>
+                            @endif
 
-                                      @if(App\Models\Socialsetting::find(1)->d_status == 1)
-                                      <li>
-                                        <a href="{{ App\Models\Socialsetting::find(1)->dribble }}" class="dribbble" target="_blank">
-											<i class="fab fa-instagram"></i>
-                                        </a>
-                                      </li>
-                                      @endif
+                            @if(App\Models\Socialsetting::find(1)->d_status == 1)
+                                <li>
+                                    <a href="{{ App\Models\Socialsetting::find(1)->dribble }}" class="dribbble" target="_blank">
+										<i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                            @endif
 
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-4">
+
+				<div class="col-md-3 col-lg-4">
 					<div class="footer-widget info-link-widget">
-						<h4 class="title">
-								{{ $langg->lang21 }}
-						</h4>
+						<h6 class="texto">Empresa</h6>
 						<ul class="link-list">
-							<li>
+							<!--<li>
 								<a href="{{ route('front.index') }}">
 									{{ $langg->lang22 }}
 								</a>
-							</li>
+							</li>-->
 
 							@foreach(DB::table('pages')->where('footer','=',1)->get() as $data)
 							<li>
@@ -503,14 +590,20 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-4">
+				<!--<div class="col-md-6 col-lg-4">
 					<div class="footer-widget recent-post-widget">
 						<h4 class="title">
 							{{ $langg->lang24 }}
 						</h4>
 					</div>
+				</div>-->			
+				<div class="col-md-3 text-end">
+					<a href="">Cadastro</a>
+					<a href="">Login</a>
 				</div>
 			</div>
+
+
 		</div>
 
 		<div class="copy-bg">
