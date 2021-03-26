@@ -130,8 +130,7 @@
 
 
 	@if($ps->featured == 1)
-		<!-- Trending Item Area Start -->
-		<section  class="trending">
+		<!--<section  class="trending">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 remove-padding">
@@ -149,6 +148,54 @@
 							@foreach($feature_products as $prod)
 								@include('includes.product.slider-product')
 							@endforeach
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>-->
+		<!-- Tranding Item Area End -->
+	@endif
+
+	@if($ps->featured == 1)
+		<!-- Trending Item Area Start -->
+		<section  class="trending seguro">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 remove-padding">
+						<div class="section-top">
+							<h2 class="section-title">
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 remove-padding">
+						<div class="row" style="height: 601px; width: 100%;">
+							<div class="col-3">
+								<h3 class="fala">Roupas & Acessórios</h3>
+								<span class="barra"></span>
+								<a href="" class="more">Mais vendidos</a>
+								<a href="" class="fem">Feminino</a>
+								<a href="" class="masc">Masculino</a>
+								<a href="" class="infan">Infantil</a>
+								<a href="" class="ver-mais">Ver Tudo</a>
+							</div>
+							<div class="col-3">
+								<div class="banner-destaque">
+									
+									<button><h6 class="text-btn">Comprar Agora</h6></button>
+								</div>
+            				</div>
+							<div class="col-6">
+								<div class="row">
+									<div class="produto">
+										@foreach($feature_products as $prod)
+											@include('includes.product.slider-product')
+										@endforeach
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 

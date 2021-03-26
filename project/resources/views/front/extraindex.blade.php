@@ -1,7 +1,7 @@
 @if($ps->hot_sale == 1)
 
 <!-- Clothing and Apparel Area Start -->
-<section class="product-tab">
+<!--<section class="product-tab">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 remove-padding">
@@ -61,14 +61,14 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section>-->
 <!-- Clothing and Apparel Area start -->
 
 @endif
 
 @if($ps->best == 1)
 <!-- Phone and Accessories Area Start -->
-<section class="phone-and-accessories categori-item">
+<!--<section class="phone-and-accessories categori-item">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 remove-padding">
@@ -89,7 +89,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section>-->
 <!-- Phone and Accessories Area start-->
 @endif
 
@@ -147,7 +147,7 @@
 
 	@if($ps->top_rated == 1)
 		<!-- Electronics Area Start -->
-		<section class="categori-item electronics-section">
+		<!--<section class="categori-item electronics-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 remove-padding">
@@ -170,7 +170,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section>-->
 		<!-- Electronics Area start-->
 	@endif
 
@@ -198,7 +198,7 @@
 
 	@if($ps->big == 1)
 	<!-- Clothing and Apparel Area Start -->
-	<section class="categori-item clothing-and-Apparel-Area">
+	<!--<section class="categori-item clothing-and-Apparel-Area">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 remove-padding">
@@ -221,7 +221,7 @@
 			</div>
 		</div>
 		</div>
-	</section>
+	</section>-->
 	<!-- Clothing and Apparel Area start-->
 @endif
 

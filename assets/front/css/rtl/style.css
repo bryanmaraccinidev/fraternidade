@@ -1781,7 +1781,7 @@ nav button {
     overflow: hidden;
     text-align: center; }
     .item .item-img img {
-      width: 100%;
+      width: 70%;
       height: auto;
       -webkit-transition: all 0.3s ease-in;
       -o-transition: all 0.3s ease-in;
@@ -2661,7 +2661,7 @@ nav button {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0px;
-  color: #ff5500;
+  color: #000 !important;
 }
 
 .footer .footer-widget .title {

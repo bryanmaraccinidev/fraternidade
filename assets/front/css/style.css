@@ -43,7 +43,7 @@ body {
   font-size: 16px;
   margin: 0px !important;
   padding: 0px !important;
-  color: #333333;
+  color: #000;
   overflow-x: hidden;
   line-height: normal;
 }
@@ -1539,7 +1539,7 @@ nav button {
 /*-----------------------------
 ** Trending Item Area Start
 ------------------------------*/
-.trending {
+/*.trending {
   padding: 36px 0px 0px;
   }
 
@@ -1590,7 +1590,7 @@ nav button {
     }
   .trending .owl-carousel .owl-controls .owl-nav .owl-next {
     right: 0px;
-    }
+    }*/
 
 /*-----------------------------
 ** Phone and Accessories Area Start
@@ -1613,11 +1613,17 @@ nav button {
 
      
 .item {
+  width: 40%;
   overflow: hidden;
   display: block;
   -webkit-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  -ms-box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  -o-box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
   }
 .item:hover {
   overflow: hidden;
@@ -1636,7 +1642,8 @@ nav button {
     overflow: hidden;
     text-align: center; }
     .item .item-img img {
-      width: 100%;
+      width: 50%;
+      transform: scale(1.4);
       height: auto;
       -webkit-transition: all 0.3s ease-in;
       -o-transition: all 0.3s ease-in;
@@ -1724,14 +1731,17 @@ nav button {
       line-height: 18px;
       font-weight: 700;
       margin-bottom: 0px;
+      text-align: center;
+      color: #555;
      }
     .item .info .name {
       font-size: 15px;
       font-weight: 600;
       line-height: 20px;
       color: #555;
-      margin-bottom: 8px;
+      margin-bottom: 0;
       height: 41px;
+      text-align: center;
      }
   .item:hover .extra-list {
     left: 20px;
@@ -1796,8 +1806,7 @@ nav button {
 .item .item-cart-area ul li span{
     width: 30px;
     height: 30px;
-    background:  linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
-         #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) !important;
+    background: #FF00B8 !important;
     display: block;
     line-height: 30px;
     color: #fff;
@@ -2356,12 +2365,12 @@ nav button {
         font-size: 14px;
         line-height: 24px;
         margin-bottom: 0px;
-        color: #000; }
+        color: #000 !important; }
       .footer .copy-bg .content .content a {
         font-size: 14px;
         line-height: 24px;
         margin-bottom: 0px;
-        color: #ff5500; }
+        color: #000 !important; }
   .footer .footer-widget .title {
     text-transform: uppercase;
     font-size: 22px;

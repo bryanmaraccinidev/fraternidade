@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+.fala {
+    width: 185px;
+    height: 80px;
+    left: 113px;
+    top: 120px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 40px;
+    /* or 111% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+
+    color: #000000;
+}
+
+span.barra {
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    left: 17px;
+    top: 85px;
+
+    background: #FF29EA;
+}
+
+.more, .fem, .masc, .infan, .ver-mais {
+    position: absolute;
+    width: 91px;
+    height: 16px;
+    left: 50px;
+    top: 130px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.fem {
+    position: absolute;
+    width: 58px;
+    height: 16px;
+    top: 170px;
+}
+
+/* Masculino */
+.masc {
+    position: absolute;
+    width: 65px;
+    height: 16px;
+    top: 210px;
+}
+
+/* Infantil */
+.infan{
+    position: absolute;
+    width: 44px;
+    height: 16px;
+    top: 250px;
+}
+
+.ver-mais {
+    position: absolute;
+    width: 60px;
+    height: 16px;
+    left: 80px;
+    top: 530px;
+}
+
+.banner-destaque{
+    position: absolute;
+    width: 283px;
+    height: 601px;
+    left: -15% !important;
+    top: 0px;
+
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(0, 0, 0, 0.73) 92.19%);
+}
+
+.banner-destaque button {
+    position: absolute;
+    left: 27%;
+    right: 62%;
+    top: 66.54%;
+    bottom: 27.19%;
+
+    width: 130px;
+    height: 40px;
+
+    background: #FF29EA;
+    border-radius: 6px;
+    border: none;
+}
+
+.text-btn {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    line-height: 17,07px;
+    letter-spacing: -1,5%;
+}
+
+.produto {
+    max-height: 601px !important;
+    width: 100%;
+}

@@ -353,7 +353,7 @@ nav .menu li.dropdown.open > a,
         .info-link-widget .link-list li a:hover i {
           color: <?php echo $color; ?>; }
       .footer .copy-bg .content .content a {
-        color: <?php echo $color; ?>; }
+        color: #000 !important; }
 
        .login-area .header-area .title {
           background-image: linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,

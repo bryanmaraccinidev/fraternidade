@@ -58,6 +58,7 @@
 
 	<!-- stylesheet -->
 	<link rel="stylesheet" href="{{asset('assets/front/css/style.css')}}">
+	<link rel="stylesheet" href="{{asset('assets/front/css/destaque.css')}}">
 	<link rel="stylesheet" href="{{asset('assets/front/css/custom.css')}}">
 	<link rel="stylesheet" href="{{asset('assets/front/css/common.css')}}">
 	<!-- responsive -->
@@ -396,14 +397,14 @@
 					<!--categorie menu end-->
 				</div>
 
-				<div class="col-lg-3 col-md-6 categorimenu-wrapper  decrease-padding">
+				<div class="col-lg-3 col-md-6 categoriservices-wrapper  decrease-padding">
 					<!--Services menu start-->
-					<div class="categories_menu">
+					<div class="categories_services">
 						<div class="categories_title">
 							<h2 class="categori_toggle">{{ $langg->lang14 }} <i class="fa fa-angle-down arrow-down"></i></h2>
 						</div>
 						
-						<div class="categories_menu_inner">
+						<div class="categories_services_inner">
 							<ul>
 								@php
 								$i=1;

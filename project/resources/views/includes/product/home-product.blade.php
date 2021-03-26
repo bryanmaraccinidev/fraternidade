@@ -1,5 +1,5 @@
 
-								<div class="col-lg-3 col-md-4 col-6 remove-padding">
+								<div class="row remove-padding">
 
 										<a href="{{ route('front.product', $prod->slug) }}" class="item">
 											<div class="item-img">
