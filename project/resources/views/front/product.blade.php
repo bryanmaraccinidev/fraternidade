@@ -763,12 +763,10 @@
     </div>
     <div class="row">
       <div class="col-lg-12 remove-padding">
-        <div class="trending-item-slider">
           @foreach($productt->category->products()->where('status','=',1)->where('id','!=',$productt->id)->take(8)->get()
           as $prod)
           @include('includes.product.slider-product')
           @endforeach
-        </div>
       </div>
 
     </div>

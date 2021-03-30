@@ -1610,12 +1610,12 @@ nav button {
   padding: 20px 0px 30px; }
   .categori-item .section-top {
     margin-bottom: 22px; }
-
-     
+    
 .item {
-  width: 40%;
+  width: 32%;
+  height: 50%;
   overflow: hidden;
-  display: block;
+  display: inline-block;
   -webkit-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
@@ -1627,7 +1627,7 @@ nav button {
   }
 .item:hover {
   overflow: hidden;
-  display: block;
+  display: inline-block;
   position: relative;
   z-index: 9;
   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.15);
@@ -1642,7 +1642,7 @@ nav button {
     overflow: hidden;
     text-align: center; }
     .item .item-img img {
-      width: 50%;
+      width: 70%;
       transform: scale(1.4);
       height: auto;
       -webkit-transition: all 0.3s ease-in;
@@ -1653,7 +1653,7 @@ nav button {
         transform: scale(1.2);
       }
     .item .item-img .sell-area {
-      position: absolute;
+      position: relative;
       top: 20px;
       right: 0px;
       height: 100%;
@@ -1717,7 +1717,7 @@ nav button {
    }
     .item .info .stars {
       display: block;
-      text-align: left;
+      text-align: center;
       }
       .item .info .stars ul {
         display: inline-block; }
@@ -1750,7 +1750,7 @@ nav button {
     .item .item-cart-area {
       position: absolute;
       display: block;
-      text-align: left;
+      text-align: center;
       width: 100%;
       left: -2px;
       padding: 0px 15px;
