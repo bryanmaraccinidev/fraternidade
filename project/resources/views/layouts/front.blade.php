@@ -515,8 +515,20 @@
 @yield('content')
 
 	<!-- Footer Area Start -->
-	<footer class="footer" id="footer">
+	<footer class="footer" id="footer" style="width: 100%;">
 		<div class="container">
+			<div class="row email p-5">
+					<div class="col">
+						<h4>Newsletter</h4>
+						<p>Deixe seu e-mail para receber as</br> melhores ofertas e cupons!</p>
+					</div>
+					<div class="col">
+						<form action="">
+							<input type="email" placeholder="Escreva seu e-mail" />
+							<button type="submit">Pesquisar</button>
+						</form>
+					</div>
+			</div>
 			<div class="row">
 				<div class="col-md-2">
 					<div class="footer-info-area">
@@ -536,7 +548,7 @@
 				<div class="col-md-3">
 					<div class="fotter-social-links text-center">
 						<ul>
-							<h6 class="">Redes Sociais</h6>
+							<h6 class="" style="color: #000;">Redes Sociais</h6>
                             @if(App\Models\Socialsetting::find(1)->f_status == 1)
                                 <li>
                                     <a href="{{ App\Models\Socialsetting::find(1)->facebook }}" class="facebook" target="_blank">
@@ -598,9 +610,16 @@
 						</h4>
 					</div>
 				</div>-->			
-				<div class="col-md-3 text-end">
-					<a href="">Cadastro</a>
-					<a href="">Login</a>
+				<div class="col-md-3 text-end footer-links">
+					<div class="row" style="display: inline-block;">
+						<div class="col-6" style="padding-bottom: 20px;">
+							<button class="normal">Cadastro</button>
+						</div>
+						
+						<div class="col-6">
+							<button class="diferente">Login</button>
+						</div>
+					</div>
 				</div>
 			</div>
 

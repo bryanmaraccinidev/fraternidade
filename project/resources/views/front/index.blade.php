@@ -172,7 +172,7 @@
 				<div class="row">
 					<div class="col-lg-12 remove-padding" style="width: 100%;">
 						<div class="row" style="height: 500px; padding-bottom: 20px;">
-							<div class="col-3">
+							<div class="col-3 destaques">
 								<h3 class="fala">Roupas & Acessórios</h3>
 								<span class="barra"></span>
 								<a href="" class="more">Mais vendidos</a>
@@ -183,7 +183,7 @@
 							</div>
 							<div class="col-2" style="left: -3%">
 								<div class="banner-destaque">
-									
+									<img src="{{ $prod->photo ? asset('assets/images/thumbnails/'.$prod->thumbnail):asset('assets/images/noimage.png') }}" />
 									<button><h6 class="text-btn">Comprar Agora</h6></button>
 								</div>
             				</div>

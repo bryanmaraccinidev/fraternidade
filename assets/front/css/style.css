@@ -2396,6 +2396,77 @@ nav button {
         -o-transition: all 0.3s ease-in;
         transition: all 0.3s ease-in; }
 
+
+.footer-links {
+  display: inline-block;
+}
+
+.footer-links button{
+  width: 130px;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+}
+
+.footer-links button.normal {
+  background-image: linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
+  #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) !important;
+}
+
+.footer-links button.diferente {
+  background-image: linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
+  #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) !important;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  border: 2px solid;
+  border-image:linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
+  #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) 1;
+}
+
+.footer .email {
+  width: 100%;
+  max-width: 1250px;
+  height: 191px;
+  background-color: #c5e8ff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.email h4 {
+  font-size: 20px;
+  color: #000;
+  text-align: left;
+}
+
+.email p {
+  font-size: 12px;
+  text-align: left;
+}
+
+.email input {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  width: 300px;
+  height: 40px;
+  border: none;
+  background: #FFFFFF;
+  border-radius: 6px;
+  padding-left: 15px;
+}
+
+.email button {
+  background: #FF473C;
+  border-radius: 6px;
+  border: none;
+}
+
 .info-link-widget {
   padding-left: 50px;}
   .info-link-widget .texto {
