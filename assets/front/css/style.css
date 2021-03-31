@@ -2451,7 +2451,8 @@ nav button {
   position: absolute;
   left: 0%;
   right: 0%;
-  top: 0%;
+  top: 50%;
+  transform: translateY(-50%);
   bottom: 0%;
   width: 300px;
   height: 40px;
@@ -5052,8 +5053,16 @@ nav button {
 /*---------------------------
 ** LOgin Signup  Area Start
 ---------------------------*/
+.borda-login {
+  border: 2px solid;
+  border-image:linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
+  #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) 1;
+  border-radius: 6px;
+}
+
 .login-signup {
-  padding: 60px 0px 60px; }
+  padding: 60px 0px 60px;
+border-radius: 6px; }
   .login-area {
     padding: 30px 30px 39px;
     background: #fff;
@@ -5080,7 +5089,8 @@ nav button {
         background: #f3f8fc;
         padding: 0px 30px 0px 45px;
         border: 1px solid rgba(0, 0, 0, 0.1);
-        font-size: 14px; }
+        font-size: 14px; 
+        border-radius: 6px;}
 
        .login-area .form-input textarea {
         width: 100%;
@@ -5117,6 +5127,7 @@ nav button {
       border: 0px;
       color: #fff;
       font-weight: 700;
+      border-radius: 6px;
 
       margin-top: 20px;
       -webkit-transition: all 0.3s ease-in;
@@ -5204,9 +5215,11 @@ nav button {
     text-align: center;
     background: #ff5500;
     border-radius: 0px;
-    color: #fff; }
+    color: #404040 !important;
+    font-size: 24px;
+    font-weight: bold;}
     .comment-log-reg-tabmenu .nav-tabs .nav-link.active {
-      background: #143250; }
+      background: #Fff; }
 
 /*---------------------------
 ** LOgin Signup  Area Start
@@ -5222,9 +5235,10 @@ nav button {
       text-align: center;
       margin-bottom: 40px; }
        .login-area .header-area .title {
-        font-size: 30px;
+        font-size: 18px !important;
         font-weight: 700;
-
+        text-transform: initial !important;
+        text-align: left !important;
         line-height: 40px;
         color: #ff5500; }
       .login-area .header-area .text {

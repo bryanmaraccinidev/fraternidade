@@ -2,10 +2,10 @@
 
 @section('content')
 
-<section class="login-signup">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-6">
+<section class="login-signup ">
+  <div class="container " style="border-radius: 6px;">
+    <div class="row" >
+      <div class="col-lg-6 borda-login">
         <nav class="comment-log-reg-tabmenu">
           <div class="nav nav-tabs" id="nav-tab" role="tablist">
             <a class="nav-item nav-link login active" id="nav-log-tab" data-toggle="tab" href="#nav-log" role="tab"
@@ -30,12 +30,10 @@
                   {{ csrf_field() }}
                   <div class="form-input">
                     <input type="email" name="email" placeholder="{{ $langg->lang173 }}" required="">
-                    <i class="icofont-user-alt-5"></i>
                   </div>
                   <div class="form-input">
                     <input type="password" class="Password" name="password" placeholder="{{ $langg->lang174 }}"
                       required="">
-                    <i class="icofont-ui-password"></i>
                   </div>
                   <div class="form-forgot-pass">
                     <div class="left">
@@ -53,7 +51,7 @@
                   <button type="submit" class="submit-btn">{{ $langg->lang178 }}</button>
                   @if(App\Models\Socialsetting::find(1)->f_check == 1 || App\Models\Socialsetting::find(1)->g_check ==
                   1)
-                  <div class="social-area">
+                  <!--<div class="social-area" style="visibility: hidden;">
                     <h3 class="title">{{ $langg->lang179 }}</h3>
                     <p class="text">{{ $langg->lang180 }}</p>
                     <ul class="social-links">
@@ -72,7 +70,7 @@
                       </li>
                       @endif
                     </ul>
-                  </div>
+                  </div>-->
                   @endif
                 </form>
               </div>
@@ -89,40 +87,22 @@
                   {{ csrf_field() }}
 
                   <div class="form-input">
-                    <input type="text" class="User Name" name="name" placeholder="{{ $langg->lang182 }}" required="">
-                    <i class="icofont-user-alt-5"></i>
-                  </div>
-
-                  <div class="form-input">
                     <input type="email" class="User Name" name="email" placeholder="{{ $langg->lang183 }}" required="">
-                    <i class="icofont-email"></i>
-                  </div>
-
-                  <div class="form-input">
-                    <input type="text" class="User Name" name="phone" placeholder="{{ $langg->lang184 }}" required="">
-                    <i class="icofont-phone"></i>
-                  </div>
-
-                  <div class="form-input">
-                    <input type="text" class="User Name" name="address" placeholder="{{ $langg->lang185 }}" required="">
-                    <i class="icofont-location-pin"></i>
                   </div>
 
                   <div class="form-input">
                     <input type="password" class="Password" name="password" placeholder="{{ $langg->lang186 }}"
                       required="">
-                    <i class="icofont-ui-password"></i>
                   </div>
 
                   <div class="form-input">
-                    <input type="password" class="Password" name="password_confirmation"
+                    <input type="text" class="Password" name="password_confirmation"
                       placeholder="{{ $langg->lang187 }}" required="">
-                    <i class="icofont-ui-password"></i>
                   </div>
 
                   @if($gs->is_capcha == 1)
 
-                  <ul class="captcha-area">
+                  <!--<ul class="captcha-area">
                     <li>
                       <p><img class="codeimg1" src="{{asset("assets/images/capcha_code.png")}}" alt=""> <i
                           class="fas fa-sync-alt pointer refresh_code "></i></p>
@@ -134,7 +114,7 @@
                     <i class="icofont-refresh"></i>
                   </div>
 
-                  @endif
+                  @endif-->
 
                   <input class="mprocessdata" type="hidden" value="{{ $langg->lang188 }}">
                   <button type="submit" class="submit-btn">{{ $langg->lang189 }}</button>

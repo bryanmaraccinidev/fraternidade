@@ -356,13 +356,8 @@ nav .menu li.dropdown.open > a,
         color: #000 !important; }
 
        .login-area .header-area .title {
-          background-image: linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
-          #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) !important;
-          background-size: 100%;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent; 
-          -moz-background-clip: text;
-          -moz-text-fill-color: transparent; }
+          color: #000 !important;
+          background-size: 100%; }
       .login-area .form-input i {
         color: <?php echo $color; ?>; }
       .login-area .social-area .title {
@@ -383,10 +378,13 @@ nav .menu li.dropdown.open > a,
          #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) !important; }
 
   .comment-log-reg-tabmenu .nav-tabs .nav-link {
-    background: #143250; }
+    background: #fff; }
 .comment-log-reg-tabmenu .nav-tabs .nav-link.active {
-    background: linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
-         #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) !important;
+    background: #fff !important;
+    border-bottom: 2px solid;
+    border-image:linear-gradient(90deg, #18A0FB 0%, #6118FB 17.19%, #810AAB 30.73%,
+    #FF00B8 48.44%, #FF0D0D 65.1%, #FFE600 82.29%, #42AB11 100%) 1;
+
 }
     
           .trending .item .item-img .extra-list ul li span:hover {

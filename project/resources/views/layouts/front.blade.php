@@ -525,7 +525,7 @@
 					<div class="col">
 						<form action="">
 							<input type="email" placeholder="Escreva seu e-mail" />
-							<button type="submit">Pesquisar</button>
+							<a href="" style="top: 60px;">Pesquisar</a>
 						</form>
 					</div>
 			</div>
@@ -613,11 +613,15 @@
 				<div class="col-md-3 text-end footer-links">
 					<div class="row" style="display: inline-block;">
 						<div class="col-6" style="padding-bottom: 20px;">
-							<button class="normal">Cadastro</button>
+							<a href="{{ route('user.login') }}">
+								<button class="normal">Cadastro</button>
+							</a>
 						</div>
 						
 						<div class="col-6">
-							<button class="diferente">Login</button>
+							<a href="{{ route('user.login') }}">
+								<button class="diferente">Login</button>
+							</a>
 						</div>
 					</div>
 				</div>
