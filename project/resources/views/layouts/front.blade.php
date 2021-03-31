@@ -399,7 +399,7 @@
 
 				<div class="col-lg-3 col-md-6 categoriservices-wrapper  decrease-padding">
 					<!--Services menu start-->
-					<div class="categories_services">
+					<!--<div class="categories_services">
 						<div class="categories_title">
 							<h2 class="categori_toggle">{{ $langg->lang14 }} <i class="fa fa-angle-down arrow-down"></i></h2>
 						</div>
@@ -477,7 +477,7 @@
 
 							</ul>
 						</div>
-					</div>
+					</div>-->
 					<!--Services menu end-->
 				</div>
 				

@@ -263,4 +263,4 @@
 
 
 	<!-- main -->
-	<script src="{{asset('assets/front/js/mainextra.js')}}"></script>
+	<!--<script src="{{asset('assets/front/js/mainextra.js')}}"></script>-->

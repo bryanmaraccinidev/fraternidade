@@ -49,29 +49,6 @@
                   <input type="hidden" name="modal" value="1">
                   <input class="mauthdata" type="hidden" value="{{ $langg->lang177 }}">
                   <button type="submit" class="submit-btn">{{ $langg->lang178 }}</button>
-                  @if(App\Models\Socialsetting::find(1)->f_check == 1 || App\Models\Socialsetting::find(1)->g_check ==
-                  1)
-                  <!--<div class="social-area" style="visibility: hidden;">
-                    <h3 class="title">{{ $langg->lang179 }}</h3>
-                    <p class="text">{{ $langg->lang180 }}</p>
-                    <ul class="social-links">
-                      @if(App\Models\Socialsetting::find(1)->f_check == 1)
-                      <li>
-                        <a href="{{ route('social-provider','facebook') }}">
-                          <i class="fab fa-facebook-f"></i>
-                        </a>
-                      </li>
-                      @endif
-                      @if(App\Models\Socialsetting::find(1)->g_check == 1)
-                      <li>
-                        <a href="{{ route('social-provider','google') }}">
-                          <i class="fab fa-google-plus-g"></i>
-                        </a>
-                      </li>
-                      @endif
-                    </ul>
-                  </div>-->
-                  @endif
                 </form>
               </div>
             </div>
@@ -99,22 +76,6 @@
                     <input type="text" class="Password" name="password_confirmation"
                       placeholder="{{ $langg->lang187 }}" required="">
                   </div>
-
-                  @if($gs->is_capcha == 1)
-
-                  <!--<ul class="captcha-area">
-                    <li>
-                      <p><img class="codeimg1" src="{{asset("assets/images/capcha_code.png")}}" alt=""> <i
-                          class="fas fa-sync-alt pointer refresh_code "></i></p>
-                    </li>
-                  </ul>
-
-                  <div class="form-input">
-                    <input type="text" class="Password" name="codes" placeholder="{{ $langg->lang51 }}" required="">
-                    <i class="icofont-refresh"></i>
-                  </div>
-
-                  @endif-->
 
                   <input class="mprocessdata" type="hidden" value="{{ $langg->lang188 }}">
                   <button type="submit" class="submit-btn">{{ $langg->lang189 }}</button>

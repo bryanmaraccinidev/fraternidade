@@ -76,13 +76,13 @@ else {
 
 
 .footer {
-  background: <?php echo $footer_color; ?>;
+  background: #fff !important;
 }
 
 
 
   .footer .copy-bg {
-    background: <?php echo $copyright_color; ?>; }
+    background: #fff !important; }
 
 .mybtn1,
 .bottomtotop i,

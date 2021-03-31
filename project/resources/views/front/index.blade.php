@@ -51,37 +51,6 @@
 		<!-- Hero Area End -->
 	@endif
 
-
-	@if($ps->featured_category == 1)
-
-	{{-- Slider Bottom Banner Start --}}
-	<!--<section class="slider_bottom_banner">
-		<div class="container">
-		@foreach(DB::table('featured_banners')->get()->chunk(4) as $data1)
-			<div class="row">
-				@foreach($data1 as $data)
-				<div class="col-lg-3 col-6">
-				<a href="{{ $data->link }}" target="_blank" class="banner-effect">
-					<img src="{{ $data->photo ? asset('assets/images/featuredbanner/'.$data->photo) : asset('assets/images/noimage.png') }}" alt="">
-				</a>
-				</div>
-				@endforeach
-			</div>
-			@if(!$loop->last)
-			<br>
-			@endif
-		@endforeach		
-	
-			</div>
-		</div>
-	</section>-->
-	{{-- Slider Botom Banner End --}}
-
-	@endif
-
-
-
-
 @if($ps->service == 1)
 
 {{-- Info Area Start --}}
